@@ -16,7 +16,8 @@ def main(f, skip=False, variables=None, funcs=None) -> int:
         if skip:
             skip = first != "return"
             continue
-
+        
+        # Match/case statement must be used here with Python version >= 3.10
         if first == "function":
             skip = True
             funcs[string[0]] = {"args": string[1:], "body": f[i + 1:]}
