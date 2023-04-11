@@ -1,0 +1,14 @@
+function cube a
+init result a
+mul result a
+mul result a
+return result
+
+function super_div b c
+div b c
+cube b
+return b
+
+init result 10
+super_div result 5
+return result
