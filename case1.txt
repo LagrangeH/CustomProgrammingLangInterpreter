@@ -1,0 +1,11 @@
+function cube a
+init result a
+mul result a
+mul result a
+return result
+
+init result 10
+cube result
+
+return result
+end_program
